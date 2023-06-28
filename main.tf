@@ -15,17 +15,17 @@ resource "aws_vpc" "Lab_Github-Pipeline_VPC" {
 
 }
 
-# # Create a public subnet
-# resource "aws_subnet" "lab-subnet1" {
-#   vpc_id     = aws_vpc.Lab_Terraform_VPC.id
-#   cidr_block = "50.0.0.0/24"
-#   availability_zone = "us-west-2a"
-#   map_public_ip_on_launch = true
+# Create a public subnet
+resource "aws_subnet" "lab-subnet1" {
+  vpc_id     = aws_vpc.Lab_Github-Pipeline_VPC.id
+  cidr_block = "50.0.0.0/24"
+  availability_zone = var.my-default-region
+  map_public_ip_on_launch = true
 
-#   tags = {
-#     Name = "public_terraform_subnet1"
-#   }
-# }
+  tags = {
+    Name = "pipeline_subnet1"
+  }
+}
 
 # resource "aws_subnet" "lab-subnet2" {
 #   vpc_id     = aws_vpc.Lab_Terraform_VPC.id
