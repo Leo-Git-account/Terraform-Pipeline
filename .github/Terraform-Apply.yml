@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      my-access-key: ${{ secrets.my-access-key }}
-      my-secret-key: ${{ secrets.my-secret-key }}
+      my_access_key: ${{ secrets.my_access_key }}
+      my_secret_key: ${{ secrets.my_secret_key }}
 
     steps:
       - name: Checkout repository
