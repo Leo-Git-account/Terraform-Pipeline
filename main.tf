@@ -27,6 +27,7 @@ resource "aws_subnet" "lab-subnet1" {
   }
 }
 
+
 # resource "aws_subnet" "lab-subnet2" {
 #   vpc_id     = aws_vpc.Lab_Terraform_VPC.id
 #   cidr_block = "50.0.1.0/24"
