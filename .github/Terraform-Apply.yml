@@ -10,6 +10,11 @@ on:
 jobs:
   terraform:
     runs-on: ubuntu-latest
+
+    env:
+      my-access-key: ${{ secrets.my-access-key }}
+      my-secret-key: ${{ secrets.my-secret-key }}
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
