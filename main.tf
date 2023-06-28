@@ -98,3 +98,5 @@ resource "aws_vpc" "Lab_Github-Pipeline_VPC" {
 #   route_table_id = aws_route_table.lab_route_table1.id
 # }
 
+
+
